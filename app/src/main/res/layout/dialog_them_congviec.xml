@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A0C6C3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm công việc"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#F44336"
+        android:gravity="center"
+        android:padding="10dp"
+        android:id="@+id/txttThem"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên công việc"
+        android:id="@+id/editTextTenCV"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txttThem"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Trạng thái công việc"
+        android:id="@+id/editTextTTCV"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editTextTenCV"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editTextTTCV"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/bntThem"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hủy"
+        android:layout_marginTop="10dp"
+        android:id="@+id/bntHuy"
+        android:layout_toRightOf="@id/bntThem"
+        android:layout_below="@+id/editTextTTCV"
+        android:layout_marginLeft="30dp"/>
+
+</RelativeLayout>

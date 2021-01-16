@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A0C6C3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cập nhật công việc"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#F44336"
+        android:gravity="center"
+        android:padding="10dp"
+        android:id="@+id/txttThem"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextTenCVsua"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txttThem"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextTTCVsua"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editTextTenCVsua"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cập nhật"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editTextTTCVsua"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/bntSua"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hủy"
+        android:layout_marginTop="10dp"
+        android:id="@+id/bntDong"
+        android:layout_toRightOf="@id/bntSua"
+        android:layout_below="@+id/editTextTTCVsua"
+        android:layout_marginLeft="10dp"/>
+
+</RelativeLayout>
